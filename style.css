@@ -1,0 +1,246 @@
+/* ===== GLOBAL ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  color: #9393c6;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #1a1a2e, #2e1a47, #472183, #8b5cf6);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+body {
+  background: #00000a;
+  overflow-x: hidden;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top:0; left:0;
+  width:100%; height:100%;
+  background: radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+  z-index: 0;
+}
+.hero h1 {
+  font-family: 'Montserrat';
+  font-size: 3rem;
+  font-weight: 700;
+  animation: glow 2s ease-in-out infinite alternate;
+  color: #fff; 
+}
+.hero h1 {
+  background: linear-gradient(90deg, #b77fe1, #241432);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+section {
+  position: relative;
+  z-index: 1;
+  padding: 80px 20px;
+}
+
+/* NAVBAR */
+.navbar { background-color: rgba(21, 21, 40, 0.9); }
+.navbar a { color: #ccd6f6; }
+.navbar a:hover { color: #4b1a94; }
+
+/* HERO */
+.hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+.hero h1 { font-size: 3rem; }
+.hero .btn-primary { background: linear-gradient(90deg, #a594f9, #8b5cf6); border: none; color: #fff; padding: 12px; border-radius: 8px; }
+
+
+/* Violet gradient button for projects */
+.btn-violet {
+  background: linear-gradient(90deg, #a594f9, #8b5cf6);
+  color: #fff !important;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-violet:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.6);
+  text-decoration: none;
+  color: #fff;
+}
+
+#particles-js {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 0;
+}
+.hero > * {
+  position: relative;
+  z-index: 1; /* ensure text is above particles */
+}
+
+/* SKILLS CAROUSEL */
+.skills-track { overflow: hidden; position: relative; width: 100%; }
+.skills-carousel { display: flex; gap: 20px; white-space: nowrap; }
+.skill-item { min-width: 120px; background: rgba(255,255,255,0.08); border-radius: 12}
+
+
+
+
+
+.skills-track {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.skills-carousel {
+  display: flex;
+  gap: 20px;
+  white-space: nowrap;
+  align-items: center;
+}
+
+.skill-item {
+  min-width: 120px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 12px;
+  padding: 20px;
+  flex-shrink: 0;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(139,92,246,0.4);
+}
+
+.skill-item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+#education {
+  background: rgba(75, 0, 130, 0.2); /* subtle violet overlay */
+  border-radius: 12px;
+  padding: 60px 20px;
+  margin: 40px 0;
+}
+
+.education-item h4 {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.education-item p {
+  font-size: 1rem;
+  color: #e6e6f9;
+}
+
+
+
+
+.project-card {
+  background: rgba(75, 0, 130, 0.4); /* your violet theme */
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  max-width: 300px;  /* limit card width */
+  margin: auto;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;       /* let image scale naturally */
+  object-fit: contain; /* do not crop, maintain aspect ratio */
+  border-radius: 12px 12px 0 0;
+  background: #2e1a47; /* optional: dark background for transparent images */
+}
+.project-card .card-body {
+  padding: 15px; /* slightly smaller padding */
+}
+
+.project-card h5 {
+  font-size: 1.1rem; /* smaller title font */
+}
+
+.project-card p {
+  font-size: 0.9rem; /* smaller description font */
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(139, 92, 246, 0.6);
+}
+.social-links a {
+  display: inline-block;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#services {
+  background: rgba(75, 0, 130, 0.15); /* subtle violet background */
+  border-radius: 12px;
+  padding: 60px 20px;
+  margin: 40px 0;
+}
+
+.service-card {
+  background: rgba(75, 0, 130, 0.4);
+  border-radius: 12px;
+  padding: 25px 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: #fff;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(139, 92, 246, 0.6);
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+.social-links a:hover {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.6);
+}
+
+.social-links img {
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+.social-links a:hover {
+  transform: translateY(-5px) rotate(5deg);
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.6);
+}
+
+.social-links a:hover::after {
+  width: 100%;
+  height: 100%;
+}
+  
+/* Individual Button Colors */
+.email     { background: #6c63ff; }
+.instagram { background: #e4405f; }
+.linkedin  { background: #0077b5; }
+.twitter   { background: #1da1f2; }

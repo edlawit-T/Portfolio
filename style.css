@@ -32,9 +32,9 @@ body::before {
   z-index: 0;
 }
 .hero h1 {
-  font-family: 'Montserrat';
+  font-family: 'Bitcount Grid Single';
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 400;
   animation: glow 2s ease-in-out infinite alternate;
   color: #fff; 
 }
